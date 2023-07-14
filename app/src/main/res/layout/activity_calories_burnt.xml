@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/liftweight_blur"
+    tools:context=".CaloriesBurnt">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99FFFFFF"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/weightDisplay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtweightDisplay"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Your Weight (kg):"
+                            android:textSize="45sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edtWeightValueBurnt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:ems="10"
+                            android:hint="kg"
+                            android:inputType="number|numberDecimal"
+                            android:textAlignment="center"
+                            android:textSize="60sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/resultDisplay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtCaloriesBurnt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Calories Burnt :"
+                            android:textSize="45sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="20dp"
+                        android:layout_weight="1"
+                        android:paddingVertical="30dp">
+
+                        <TextView
+                            android:id="@+id/txtCaloriesBurntValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="1"
+                            android:hint="Calories"
+                            android:textAlignment="center"
+                            android:textSize="60sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtGenderBurnt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Gender"
+                            android:textAlignment="center"
+                            android:textSize="45sp" />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/grpGender2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="10dp">
+
+                        <RadioButton
+                            android:id="@+id/rtnMaleBurnt"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="Male" />
+
+                        <RadioButton
+                            android:id="@+id/rtnFemaleBurnt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Female" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinner_activity"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="#4D1E1E1E"
+                        android:spinnerMode="dropdown" />
+
+                    <Spinner
+                        android:id="@+id/spinner_type"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="#4D1E1E1E" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtActivitiesBurnt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Activities"
+                    android:maxLines="20"
+                    android:minLines="1"
+                    android:paddingVertical="20dp"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp">
+
+                    <Button
+                        android:id="@+id/btnAddBurnt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/black"
+                        android:onClick="add"
+                        android:text="Add item"
+                        app:cornerRadius="20dp" />
+
+                    <Button
+                        android:id="@+id/btnCalculateBurnt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/black"
+                        android:onClick="calculate"
+                        android:text="Calculate"
+                        app:cornerRadius="20dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnResetBurnt"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:onClick="reset"
+                    android:paddingVertical="10dp"
+                    android:text="Reset"
+                    android:textAlignment="center"
+                    app:cornerRadius="20dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

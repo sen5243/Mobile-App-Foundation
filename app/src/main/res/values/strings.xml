@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <!--for log in page-->
+    <string name ="signUpNow"><u>Don\'t have an account? Sign Up Now ~</u></string>
+    <string name ="ForgotPassword"><u>Forgot Password?</u></string>
+
+    <!-- activity dropdown -->
+    <string-array name="activity">
+        <item>Light Activity (Per Hours)</item>
+        <item>Moderate Activity (Per Hours)</item>
+        <item>Strenuous Activity (Per Hours)</item>
+        <item>Very Strenuous Activity (Per Hours)</item>
+    </string-array>
+
+    <!-- activity type dropdown -->
+    <string-array name="light_activity_type">
+        <item>Cleaning House</item>
+        <item>Office Work</item>
+        <item>Playing Baseball</item>
+        <item>Playing Golf</item>
+        <item>Washing Dishes</item>
+        <item>Cooking</item>
+    </string-array>
+    <string-array name="moderate_activity_type">
+        <item>Walking briskly (3.5 mph)</item>
+        <item>Gardening</item>
+        <item>Cycling (5.5 mph)</item>
+        <item>Dancing</item>
+        <item>Playing basketball</item>
+        <item>Doing House Chores</item>
+    </string-array>
+    <string-array name="Strenuous_activity_type">
+        <item>Jogging (9 min/mile)</item>
+        <item>Playing football</item>
+        <item>Swimming</item>
+    </string-array>
+    <string-array name="Very_strenuous_activity_type">
+        <item>Running (7 min/mile)</item>
+        <item>Racquetball</item>
+        <item>Skiing</item>
+    </string-array>
+    <!--dropdown for gender option-->
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>

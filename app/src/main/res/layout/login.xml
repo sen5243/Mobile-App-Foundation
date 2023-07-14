@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sun"
+    tools:context=".LoginData">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="50dp">
+
+            <LinearLayout
+                android:id="@+id/signup_title_segment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="110dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/nutrition" />
+
+                <TextView
+                    android:id="@+id/signup_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Login"
+                    android:textColor="#171717"
+                    android:textSize="40sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/form_segment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="0"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@android:drawable/screen_background_light_transparent"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-black"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="20dp"
+                    android:textColor="#8C8282"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@android:drawable/screen_background_light_transparent"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-black"
+                    android:hint="Password"
+                    android:inputType="textVisiblePassword"
+                    android:paddingStart="20dp"
+                    android:textColor="#8C8282"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtForgotPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:text="@string/ForgotPassword"
+                    android:textAlignment="viewEnd" />
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="#526DFF"
+                    android:gravity="center|center_horizontal"
+                    android:text="Login"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/signUpNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:onClick="goSignUp"
+                    android:text="@string/signUpNow" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
