@@ -21,7 +21,8 @@
         <activity android:name=".Dashboard">
 
         </activity>
-        <activity android:name=".LoginData">
+        <activity android:name=".LoginData"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

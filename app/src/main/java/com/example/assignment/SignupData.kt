@@ -107,6 +107,7 @@ class SignupData : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         startActivity(intent)
     }
     fun dataSave(){ //function to save data
+        myRef = FirebaseDatabase.getInstance().reference
         val name = edtName.text.toString()
         val age = edtAge.text.toString()
         val weight = edtWeight.text.toString()

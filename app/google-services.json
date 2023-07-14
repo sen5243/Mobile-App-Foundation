@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "18462042949",
-    "firebase_url": "https://assignment-ddd27-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "assignment-ddd27",
-    "storage_bucket": "assignment-ddd27.appspot.com"
+    "project_number": "1008077551705",
+    "firebase_url": "https://fitness-7963c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fitness-7963c",
+    "storage_bucket": "fitness-7963c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:18462042949:android:b612ab6aa362b223d8ac2c",
+        "mobilesdk_app_id": "1:1008077551705:android:19f770804031f573b2d948",
         "android_client_info": {
           "package_name": "com.example.assignment"
         }
       },
       "oauth_client": [
         {
-          "client_id": "18462042949-pgpe097aivagofbr9rug90rgr6maabhf.apps.googleusercontent.com",
+          "client_id": "1008077551705-e5vlk2ndl8vbv1msoke1d7lvbt6vg4j6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD-lPlJXg6dD2j39YXZ-Ys2P3ekK90XZRM"
+          "current_key": "AIzaSyCS-JJFK3_iXQnWn5AI896UDBMe0dL9Y_k"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "18462042949-pgpe097aivagofbr9rug90rgr6maabhf.apps.googleusercontent.com",
+              "client_id": "1008077551705-e5vlk2ndl8vbv1msoke1d7lvbt6vg4j6.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
